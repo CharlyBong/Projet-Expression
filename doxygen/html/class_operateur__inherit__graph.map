@@ -1,0 +1,7 @@
+<map id="Operateur" name="Operateur">
+<area shape="rect" id="node3" href="$class_addition.html" title="Opérateur addition. " alt="" coords="5,155,75,181"/>
+<area shape="rect" id="node4" href="$class_division.html" title="Opérateur division. " alt="" coords="99,155,165,181"/>
+<area shape="rect" id="node5" href="$class_multiplication.html" title="Opérateur multiplication. " alt="" coords="189,155,288,181"/>
+<area shape="rect" id="node6" href="$class_soustraction.html" title="Opérateur soustraction. " alt="" coords="313,155,407,181"/>
+<area shape="rect" id="node2" href="$class_operande.html" title="Opérande d&#39;une opération. " alt="" coords="146,5,225,32"/>
+</map>
