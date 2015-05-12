@@ -1,4 +1,4 @@
 <map id="Table_Variable::getVariable" name="Table_Variable::getVariable">
-<area shape="rect" id="node2" href="$class_expression.html#ac52d2e3d2e42661df02fb1f613229c5e" title="Expression::newOpaDigOrChar" alt="" coords="233,5,436,32"/>
+<area shape="rect" id="node2" href="$class_expression.html#ac52d2e3d2e42661df02fb1f613229c5e" title="Création d&#39;un Operande, Constante ou Variable suivant si c&#39;est un nombre ou pas. " alt="" coords="233,5,436,32"/>
 <area shape="rect" id="node3" href="$class_expression.html#afb1f7c267861a3a006ff1854c9ffd702" title="Création de la classe Expression Permet d&#39;analyser une expression sous forme d&#39;une chaine de caractèr..." alt="" coords="484,5,644,32"/>
 </map>

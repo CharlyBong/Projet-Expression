@@ -13,6 +13,7 @@
 
 /** \class Variable
 * \brief Valeur inconnue d'une expression
+*	La valeur assigné est défini à NULL par défaut
 * \author Charles Bong.
 * \date 17 Mars 2015
 */

@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -107,7 +108,7 @@ $(document).ready(function(){initNavTree('class_operateur.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
-<a href="#pub-attribs">Attributs publics</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
 <a href="class_operateur-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
 <div class="title">Référence de la classe Operateur</div>  </div>
@@ -164,8 +165,8 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:a8c6684399afe0580a0ef8dfd5fae9155 inherit pub_methods_class_operande"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'éffectuer l'opération contenu.  <a href="#a8c6684399afe0580a0ef8dfd5fae9155">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a8c6684399afe0580a0ef8dfd5fae9155 inherit pub_methods_class_operande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Attributs publics</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
 <tr class="memitem:a7f2326f9f7e07fe9b4be46ed1fc2f20a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_operande.html">Operande</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operateur.html#a7f2326f9f7e07fe9b4be46ed1fc2f20a">_op_gauche</a></td></tr>
 <tr class="separator:a7f2326f9f7e07fe9b4be46ed1fc2f20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37a67162f5bd7e5a70fcad4066012a3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_operande.html">Operande</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_operateur.html#a37a67162f5bd7e5a70fcad4066012a3d">_op_droit</a></td></tr>
@@ -341,25 +342,41 @@ Voici le graphe des appelants de cette fonction :</div>
 <a class="anchor" id="a37a67162f5bd7e5a70fcad4066012a3d"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_operande.html">Operande</a>* Operateur::_op_droit</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_operateur_8h_source.html#l00048">48</a> du fichier <a class="el" href="_operateur_8h_source.html">Operateur.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="_operateur_8h_source.html#l00049">49</a> du fichier <a class="el" href="_operateur_8h_source.html">Operateur.h</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a7f2326f9f7e07fe9b4be46ed1fc2f20a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_operande.html">Operande</a>* Operateur::_op_gauche</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Définition à la ligne <a class="el" href="_operateur_8h_source.html#l00045">45</a> du fichier <a class="el" href="_operateur_8h_source.html">Operateur.h</a>.</p>
@@ -375,7 +392,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_operateur.html">Operateur</a></li>
-    <li class="footer">Généré le Lundi 11 Mai 2015 11:57:29 pour Projet-Expression par
+    <li class="footer">Généré le Mardi 12 Mai 2015 16:50:05 pour Projet-Expression par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

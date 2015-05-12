@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -129,46 +130,46 @@ $(document).ready(function(){initNavTree('_table___variable_8cpp_source.html',''
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>[name];</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_table___variable.html#ad972672fd10f8edc5f79e23ddab793c0">   38</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_table___variable.html#ad972672fd10f8edc5f79e23ddab793c0">Table_Variable::setVariable</a>(std::string name, <span class="keywordtype">float</span> value)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::map&lt;std::string, Variable*&gt;::iterator it = <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>.find(name);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (it == <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>.end())</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>[name] = <span class="keyword">new</span> <a class="code" href="class_variable.html">Variable</a>(name, value);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>[name]-&gt;definir(value);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::cout &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; value &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_table___variable.html#ad122dd4097c3c76f2460bb5d23837142">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_table___variable.html#ad122dd4097c3c76f2460bb5d23837142">Table_Variable::destroyVariable</a>(std::string name)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>.erase(name);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_table___variable.html#a810f62521d068e167a9152bc30bfbf42">   57</a></span>&#160;std::stack&lt;std::string&gt; <a class="code" href="class_table___variable.html#a810f62521d068e167a9152bc30bfbf42">Table_Variable::getListVariableNonDef</a>()</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::stack&lt;std::string&gt; list;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> one : <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> ((one.second != NULL) &amp;&amp; (one.second-&gt;calculer() == NULL)) list.push(one.first);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> list;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="ttc" id="class_table___variable_html_a810f62521d068e167a9152bc30bfbf42"><div class="ttname"><a href="class_table___variable.html#a810f62521d068e167a9152bc30bfbf42">Table_Variable::getListVariableNonDef</a></div><div class="ttdeci">std::stack&lt; std::string &gt; getListVariableNonDef()</div><div class="ttdef"><b>Definition:</b> <a href="_table___variable_8cpp_source.html#l00057">Table_Variable.cpp:57</a></div></div>
-<div class="ttc" id="class_table___variable_html_ad122dd4097c3c76f2460bb5d23837142"><div class="ttname"><a href="class_table___variable.html#ad122dd4097c3c76f2460bb5d23837142">Table_Variable::destroyVariable</a></div><div class="ttdeci">void destroyVariable(std::string name)</div><div class="ttdoc">Destruction d&#39;une variable. </div><div class="ttdef"><b>Definition:</b> <a href="_table___variable_8cpp_source.html#l00052">Table_Variable.cpp:52</a></div></div>
-<div class="ttc" id="class_table___variable_html_af65caefe678fd599fe1c299559239ff1"><div class="ttname"><a href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">Table_Variable::_listof</a></div><div class="ttdeci">std::map&lt; std::string, Variable * &gt; _listof</div><div class="ttdef"><b>Definition:</b> <a href="_table___variable_8h_source.html#l00037">Table_Variable.h:37</a></div></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_table___variable.html#ad972672fd10f8edc5f79e23ddab793c0">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_table___variable.html#ad972672fd10f8edc5f79e23ddab793c0">Table_Variable::setVariable</a>(std::string name, <span class="keywordtype">float</span> value)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::map&lt;std::string, Variable*&gt;::iterator it = <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>.find(name);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (it == <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>.end())</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>[name] = <span class="keyword">new</span> <a class="code" href="class_variable.html">Variable</a>(name, value);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>[name]-&gt;definir(value);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::cout &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; value &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_table___variable.html#ad122dd4097c3c76f2460bb5d23837142">   54</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_table___variable.html#ad122dd4097c3c76f2460bb5d23837142">Table_Variable::destroyVariable</a>(std::string name)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>.erase(name);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_table___variable.html#a810f62521d068e167a9152bc30bfbf42">   64</a></span>&#160;std::stack&lt;std::string&gt; <a class="code" href="class_table___variable.html#a810f62521d068e167a9152bc30bfbf42">Table_Variable::getListVariableNonDef</a>()</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::stack&lt;std::string&gt; list;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> item : <a class="code" href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">_listof</a>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span> ((item.second != NULL) &amp;&amp; (item.second-&gt;calculer() == NULL)) list.push(item.first);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> list;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="ttc" id="class_table___variable_html_a810f62521d068e167a9152bc30bfbf42"><div class="ttname"><a href="class_table___variable.html#a810f62521d068e167a9152bc30bfbf42">Table_Variable::getListVariableNonDef</a></div><div class="ttdeci">std::stack&lt; std::string &gt; getListVariableNonDef()</div><div class="ttdoc">Getter d&#39;un la liste des variables n&#39;ayant pas de valeur assigniée Création d&#39;un stack pour le retour...</div><div class="ttdef"><b>Definition:</b> <a href="_table___variable_8cpp_source.html#l00064">Table_Variable.cpp:64</a></div></div>
+<div class="ttc" id="class_table___variable_html_ad122dd4097c3c76f2460bb5d23837142"><div class="ttname"><a href="class_table___variable.html#ad122dd4097c3c76f2460bb5d23837142">Table_Variable::destroyVariable</a></div><div class="ttdeci">void destroyVariable(std::string name)</div><div class="ttdoc">Destruction d&#39;une variable. </div><div class="ttdef"><b>Definition:</b> <a href="_table___variable_8cpp_source.html#l00054">Table_Variable.cpp:54</a></div></div>
+<div class="ttc" id="class_table___variable_html_af65caefe678fd599fe1c299559239ff1"><div class="ttname"><a href="class_table___variable.html#af65caefe678fd599fe1c299559239ff1">Table_Variable::_listof</a></div><div class="ttdeci">std::map&lt; std::string, Variable * &gt; _listof</div><div class="ttdef"><b>Definition:</b> <a href="_table___variable_8h_source.html#l00038">Table_Variable.h:38</a></div></div>
 <div class="ttc" id="class_table___variable_html_a274578a7b16ca6772d87b089323491b2"><div class="ttname"><a href="class_table___variable.html#a274578a7b16ca6772d87b089323491b2">Table_Variable::~Table_Variable</a></div><div class="ttdeci">~Table_Variable()</div><div class="ttdef"><b>Definition:</b> <a href="_table___variable_8cpp_source.html#l00014">Table_Variable.cpp:14</a></div></div>
 <div class="ttc" id="_table___variable_8h_html"><div class="ttname"><a href="_table___variable_8h.html">Table_Variable.h</a></div><div class="ttdoc">Déclaration de la classe Table_Variable. </div></div>
 <div class="ttc" id="class_table___variable_html_ad47121e9c3c501540869241688eb97dd"><div class="ttname"><a href="class_table___variable.html#ad47121e9c3c501540869241688eb97dd">Table_Variable::Table_Variable</a></div><div class="ttdeci">Table_Variable()</div><div class="ttdef"><b>Definition:</b> <a href="_table___variable_8cpp_source.html#l00011">Table_Variable.cpp:11</a></div></div>
 <div class="ttc" id="class_table___variable_html_af873a01972eea7f9782f535477b2b314"><div class="ttname"><a href="class_table___variable.html#af873a01972eea7f9782f535477b2b314">Table_Variable::getVariable</a></div><div class="ttdeci">Variable * getVariable(std::string name)</div><div class="ttdoc">Obtetion d&#39;une variable Test l&#39;existance d&#39;une variable, la crée dans le cas contraire Et la retourne...</div><div class="ttdef"><b>Definition:</b> <a href="_table___variable_8cpp_source.html#l00026">Table_Variable.cpp:26</a></div></div>
-<div class="ttc" id="class_table___variable_html_ad972672fd10f8edc5f79e23ddab793c0"><div class="ttname"><a href="class_table___variable.html#ad972672fd10f8edc5f79e23ddab793c0">Table_Variable::setVariable</a></div><div class="ttdeci">void setVariable(std::string name, float value)</div><div class="ttdoc">Assignation d&#39;une valeur à une variable. </div><div class="ttdef"><b>Definition:</b> <a href="_table___variable_8cpp_source.html#l00038">Table_Variable.cpp:38</a></div></div>
-<div class="ttc" id="class_variable_html"><div class="ttname"><a href="class_variable.html">Variable</a></div><div class="ttdoc">Valeur inconnue d&#39;une expression. </div><div class="ttdef"><b>Definition:</b> <a href="_variable_8h_source.html#l00019">Variable.h:19</a></div></div>
+<div class="ttc" id="class_table___variable_html_ad972672fd10f8edc5f79e23ddab793c0"><div class="ttname"><a href="class_table___variable.html#ad972672fd10f8edc5f79e23ddab793c0">Table_Variable::setVariable</a></div><div class="ttdeci">void setVariable(std::string name, float value)</div><div class="ttdoc">Assignation d&#39;une valeur à une variable Recherche dans les variables enregistrées (_listof) celle aya...</div><div class="ttdef"><b>Definition:</b> <a href="_table___variable_8cpp_source.html#l00040">Table_Variable.cpp:40</a></div></div>
+<div class="ttc" id="class_variable_html"><div class="ttname"><a href="class_variable.html">Variable</a></div><div class="ttdoc">Valeur inconnue d&#39;une expression La valeur assigné est défini à NULL par défaut. </div><div class="ttdef"><b>Definition:</b> <a href="_variable_8h_source.html#l00020">Variable.h:20</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2d2e7548e67c9210f9f99c7e20f1c2d1.html">Projet-Expression</a></li><li class="navelem"><a class="el" href="_table___variable_8cpp.html">Table_Variable.cpp</a></li>
-    <li class="footer">Généré le Lundi 11 Mai 2015 11:57:29 pour Projet-Expression par
+    <li class="footer">Généré le Mardi 12 Mai 2015 16:50:05 pour Projet-Expression par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

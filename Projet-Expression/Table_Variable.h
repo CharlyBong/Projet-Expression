@@ -13,7 +13,8 @@
 #include "Singleton.h"
 
 /** \class Table_Variable
-* \brief Tableau des variables, association entre une lettre et une valeur
+* \brief Tableau des variables, association entre une lettre et une variable
+*	La gestion des variables se fait à l'aide d'une map qui associe une lettre avec un pointeur vers une variable.
 * \author Charles Bong.
 * \date 5 Avril 2015
 */

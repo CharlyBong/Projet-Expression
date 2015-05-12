@@ -1,6 +1,6 @@
 <map id="Expression::Expression" name="Expression::Expression">
 <area shape="rect" id="node2" href="$class_singleton.html#ad6f103597095efda360db4a230308666" title="Singleton::getInstance" alt="" coords="239,5,390,32"/>
-<area shape="rect" id="node3" href="$class_expression.html#ac52d2e3d2e42661df02fb1f613229c5e" title="Expression::newOpaDigOrChar" alt="" coords="213,56,416,83"/>
-<area shape="rect" id="node5" href="$class_expression.html#a7aa438208a3387e006cfa9803c293d8d" title="Expression::newOperateur" alt="" coords="227,107,402,133"/>
+<area shape="rect" id="node3" href="$class_expression.html#ac52d2e3d2e42661df02fb1f613229c5e" title="Création d&#39;un Operande, Constante ou Variable suivant si c&#39;est un nombre ou pas. " alt="" coords="213,56,416,83"/>
+<area shape="rect" id="node5" href="$class_expression.html#a7aa438208a3387e006cfa9803c293d8d" title="Création d&#39;un Operateur, suivant le caractère de l&#39;opération à réaliser. " alt="" coords="227,107,402,133"/>
 <area shape="rect" id="node4" href="$class_table___variable.html#af873a01972eea7f9782f535477b2b314" title="Obtetion d&#39;une variable Test l&#39;existance d&#39;une variable, la crée dans le cas contraire Et la retourne..." alt="" coords="464,56,644,83"/>
 </map>

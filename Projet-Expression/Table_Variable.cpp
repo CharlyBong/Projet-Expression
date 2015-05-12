@@ -32,6 +32,8 @@ Variable* Table_Variable::getVariable(std::string name)
 }
 
 /** \brief Assignation d'une valeur à une variable
+*	Recherche dans les variables enregistrées (_listof) celle ayant comme nom 'name'.
+*	Assignation d'une valeur pour cette variable s'il elle existe, création de la variable dans le cas contraire.
 * \param name string : Nom de la variable à obtenir
 * \param value float : Valeur à définir
 */
@@ -47,18 +49,23 @@ void Table_Variable::setVariable(std::string name, float value)
 }
 
 /** \brief Destruction d'une variable
-* \param name string : Nom de la variable à obtenir
+* \param name string : Nom de la variable à supprimer
 */
 void Table_Variable::destroyVariable(std::string name)
 {
 	_listof.erase(name);
 }
 
+/** \brief Getter d'un la liste des variables n'ayant pas de valeur assigniée
+*	Création d'un stack pour le retour (list).
+*	Parcours des variables enregistrées (_listof).
+*	Ajout dans le stack des variables n'ayant pas de valeur assigniée (item.second->calculer() == NULL).
+*/
 std::stack<std::string> Table_Variable::getListVariableNonDef()
 {
 	std::stack<std::string> list;
-	for (auto one : _listof)
-		if ((one.second != NULL) && (one.second->calculer() == NULL)) list.push(one.first);
+	for (auto item : _listof)
+		if ((item.second != NULL) && (item.second->calculer() == NULL)) list.push(item.first);
 	return list;
 }
 

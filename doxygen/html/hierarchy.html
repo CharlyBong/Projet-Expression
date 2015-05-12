@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -113,7 +114,7 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 <p><a href="inherits.html">Aller au graphe hiérarchique des classes</a></p>
 Cette liste d'héritage est classée approximativement par ordre alphabétique :</div><div class="directory">
 <div class="levels">[Niveau de détails <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span><span onclick="javascript:toggleLevel(3);">3</span>]</div><table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_expression.html" target="_self">Expression</a></td><td class="desc">Fonction de création d'une expression à partir d'une chaine de caractére </td></tr>
+<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_expression.html" target="_self">Expression</a></td><td class="desc">Fonction de création d'une expression à partir d'une chaine de caractére Cette classe fait office d'interface pour l'utilisation des expressions </td></tr>
 <tr id="row_1_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_1_" class="arrow" onclick="toggleFolder('1_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_operande.html" target="_self">Operande</a></td><td class="desc">Opérande d'une opération </td></tr>
 <tr id="row_1_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_constante.html" target="_self">Constante</a></td><td class="desc">Valeur définie d'une expression </td></tr>
 <tr id="row_1_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_1_1_" class="arrow" onclick="toggleFolder('1_1_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_operateur.html" target="_self">Operateur</a></td><td class="desc">Opérateur d'une opération </td></tr>
@@ -121,10 +122,10 @@ Cette liste d'héritage est classée approximativement par ordre alphabétique :
 <tr id="row_1_1_1_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_division.html" target="_self">Division</a></td><td class="desc">Opérateur division </td></tr>
 <tr id="row_1_1_2_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_multiplication.html" target="_self">Multiplication</a></td><td class="desc">Opérateur multiplication </td></tr>
 <tr id="row_1_1_3_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_soustraction.html" target="_self">Soustraction</a></td><td class="desc">Opérateur soustraction </td></tr>
-<tr id="row_1_2_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_variable.html" target="_self">Variable</a></td><td class="desc">Valeur inconnue d'une expression </td></tr>
+<tr id="row_1_2_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_variable.html" target="_self">Variable</a></td><td class="desc">Valeur inconnue d'une expression La valeur assigné est défini à NULL par défaut </td></tr>
 <tr id="row_2_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_singleton.html" target="_self">Singleton&lt; T &gt;</a></td><td class="desc">Modèle singleton applicable à n'importe quelle classe </td></tr>
 <tr id="row_3_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_3_" class="arrow" onclick="toggleFolder('3_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_singleton.html" target="_self">Singleton&lt; Table_Variable &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_3_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_table___variable.html" target="_self">Table_Variable</a></td><td class="desc">Tableau des variables, association entre une lettre et une valeur </td></tr>
+<tr id="row_3_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_table___variable.html" target="_self">Table_Variable</a></td><td class="desc">Tableau des variables, association entre une lettre et une variable La gestion des variables se fait à l'aide d'une map qui associe une lettre avec un pointeur vers une variable </td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
@@ -132,7 +133,7 @@ Cette liste d'héritage est classée approximativement par ordre alphabétique :
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Lundi 11 Mai 2015 11:57:29 pour Projet-Expression par
+    <li class="footer">Généré le Mardi 12 Mai 2015 16:50:05 pour Projet-Expression par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

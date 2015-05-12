@@ -202,6 +202,7 @@ FakesAssemblies/
 *.pptx
 *.mdj
 *.pdf
+!Compte-Rendu du projet_expression - Charles Bongiorno.pdf
 !Release/Projet-Expression.exe
 Projet-Expression/Release/
-
+Rendu/

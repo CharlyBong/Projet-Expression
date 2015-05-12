@@ -1,7 +1,7 @@
 var NAVTREE =
 [
   [ "Projet-Expression", "index.html", [
-    [ "Compte-Rendu du projet", "index.html", [
+    [ "Présentation du projet", "index.html", [
       [ "Introduction", "index.html#intro_sec", null ],
       [ "Cas d'utilisation", "index.html#usecase_sec", null ],
       [ "Représentation des classes", "index.html#class_sec", null ],
@@ -14,6 +14,47 @@ var NAVTREE =
       ] ],
       [ "Crédits", "index.html#end_sec", null ]
     ] ],
+    [ "Compte-Rendu du projet /-/ Charles Bongiorno", "_rendu.html", [
+      [ "Introduction", "_rendu.html#intro_sec2", null ],
+      [ "Cas d'utilisation", "_rendu.html#usecase_sec2", null ],
+      [ "Représentation des classes", "_rendu.html#class_sec2", null ],
+      [ "Détails des classes", "_rendu.html#detail_sec2", [
+        [ "Classe Expression", "_rendu.html#exp_detail_sec2", [
+          [ "Fonctions membres publiques", "_rendu.html#pub_exp_detail_sec2", null ],
+          [ "Fonctions membres privées", "_rendu.html#pri_exp_detail_sec2", null ],
+          [ "Attributs privés", "_rendu.html#att_exp_detail_sec2", null ]
+        ] ],
+        [ "Classe Operande", "_rendu.html#operande_detail_sec2", [
+          [ "Fonctions membres publiques", "_rendu.html#pub_operande_detail_sec2", null ]
+        ] ],
+        [ "Classe Constante", "_rendu.html#const_detail_sec2", [
+          [ "Fonctions membres publiques", "_rendu.html#pub_const_detail_sec2", null ],
+          [ "Attributs privés", "_rendu.html#att_const_detail_sec2", null ]
+        ] ],
+        [ "Classe Variable", "_rendu.html#var_detail_sec2", [
+          [ "Fonctions membres publiques", "_rendu.html#pub_var_detail_sec2", null ],
+          [ "Attributs privés", "_rendu.html#att_var_detail_sec2", null ]
+        ] ],
+        [ "Classe Operateur", "_rendu.html#op_detail_sec2", [
+          [ "Fonctions membres publiques", "_rendu.html#pub_op_detail_sec2", null ],
+          [ "Attributs protégés", "_rendu.html#att_op_detail_sec2", null ]
+        ] ],
+        [ "Classe Table_Variable", "_rendu.html#tblVar_detail_sec2", [
+          [ "Fonctions membres publiques", "_rendu.html#pub_tblVar_detail_sec2", null ],
+          [ "Fonctions membres privées", "_rendu.html#pri_tblVar_detail_sec2", null ],
+          [ "Attributs privés", "_rendu.html#att_tblVar_detail_sec2", null ]
+        ] ]
+      ] ],
+      [ "Construction d'une expression à partir d'une chaine de caractères", "_rendu.html#construc_sec2", null ],
+      [ "Les variables", "_rendu.html#variables_sec2", [
+        [ "Gestion avec la table des variables", "_rendu.html#tbl_variables_sec2", null ]
+      ] ],
+      [ "Parcours de l'expression", "_rendu.html#parc_sec2", [
+        [ "Cas de calculer", "_rendu.html#cal_parc_sec2", null ]
+      ] ],
+      [ "Crédits", "_rendu.html#end_sec2", null ]
+    ] ],
+    [ "Projet-Expression", "md__c_1__users_cbongiorno__documents__mes__documents__m1__m_i_s_n__m_o1__projet-_expression__r_e_a_d_m_e.html", null ],
     [ "Classes", null, [
       [ "Liste des classes", "annotated.html", "annotated" ],
       [ "Index des classes", "classes.html", null ],

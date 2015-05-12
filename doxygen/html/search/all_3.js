@@ -5,5 +5,6 @@ var searchData=
   ['division',['Division',['../class_division.html',1,'Division'],['../class_division.html#a3a0ec45715760489a0ef68645ac40914',1,'Division::Division()']]],
   ['division_2ecpp',['Division.cpp',['../_division_8cpp.html',1,'']]],
   ['division_2eh',['Division.h',['../_division_8h.html',1,'']]],
-  ['doxy_5fmain_5fpage_2eh',['Doxy_Main_Page.h',['../_doxy___main___page_8h.html',1,'']]]
+  ['doxy_5fmain_5fpage_2eh',['Doxy_Main_Page.h',['../_doxy___main___page_8h.html',1,'']]],
+  ['doxy_5fsecond_5fpage_2eh',['Doxy_Second_Page.h',['../_doxy___second___page_8h.html',1,'']]]
 ];

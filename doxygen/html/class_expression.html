@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -115,7 +116,7 @@ $(document).ready(function(){initNavTree('class_expression.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Fonction de création d'une expression à partir d'une chaine de caractére.  
+<p>Fonction de création d'une expression à partir d'une chaine de caractére Cette classe fait office d'interface pour l'utilisation des expressions.  
  <a href="class_expression.html#details">Plus de détails...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_expression_8h_source.html">Expression.h</a>&gt;</code></p>
@@ -124,13 +125,13 @@ Graphe de collaboration de Expression:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_expression__coll__graph.png" border="0" usemap="#_expression_coll__map" alt="Collaboration graph"/></div>
 <map name="_expression_coll__map" id="_expression_coll__map">
-<area shape="rect" id="node2" href="class_table___variable.html" title="Tableau des variables, association entre une lettre et une valeur. " alt="" coords="105,109,211,136"/><area shape="rect" id="node3" href="class_singleton.html" title="Singleton\&lt; Table_Variable \&gt;" alt="" coords="5,199,191,225"/><area shape="rect" id="node4" href="class_operateur.html" title="Opérateur d&#39;une opération. " alt="" coords="243,109,321,136"/><area shape="rect" id="node5" href="class_operande.html" title="Opérande d&#39;une opération. " alt="" coords="241,5,320,32"/></map>
+<area shape="rect" id="node2" href="class_table___variable.html" title="Tableau des variables, association entre une lettre et une variable La gestion des variables se fait ..." alt="" coords="105,109,211,136"/><area shape="rect" id="node3" href="class_singleton.html" title="Singleton\&lt; Table_Variable \&gt;" alt="" coords="5,199,191,225"/><area shape="rect" id="node4" href="class_operateur.html" title="Opérateur d&#39;une opération. " alt="" coords="243,109,321,136"/><area shape="rect" id="node5" href="class_operande.html" title="Opérande d&#39;une opération. " alt="" coords="241,5,320,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">légende</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:afb1f7c267861a3a006ff1854c9ffd702"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expression.html#afb1f7c267861a3a006ff1854c9ffd702">Expression</a> (std::string exp)</td></tr>
-<tr class="memdesc:afb1f7c267861a3a006ff1854c9ffd702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Création de la classe <a class="el" href="class_expression.html" title="Fonction de création d&#39;une expression à partir d&#39;une chaine de caractére. ">Expression</a> Permet d'analyser une expression sous forme d'une chaine de caractère et d'en construire l'opérande associée.  <a href="#afb1f7c267861a3a006ff1854c9ffd702">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:afb1f7c267861a3a006ff1854c9ffd702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Création de la classe <a class="el" href="class_expression.html" title="Fonction de création d&#39;une expression à partir d&#39;une chaine de caractére Cette classe fait office d&#39;i...">Expression</a> Permet d'analyser une expression sous forme d'une chaine de caractère et d'en construire l'opérande associée.  <a href="#afb1f7c267861a3a006ff1854c9ffd702">Plus de détails...</a><br /></td></tr>
 <tr class="separator:afb1f7c267861a3a006ff1854c9ffd702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e99570b177da619eeb2c5787cbb148e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expression.html#a3e99570b177da619eeb2c5787cbb148e">~Expression</a> ()</td></tr>
 <tr class="separator:a3e99570b177da619eeb2c5787cbb148e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,8 +149,10 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Fonctions membres privées</h2></td></tr>
 <tr class="memitem:ac52d2e3d2e42661df02fb1f613229c5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_operande.html">Operande</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expression.html#ac52d2e3d2e42661df02fb1f613229c5e">newOpaDigOrChar</a> (char *exp)</td></tr>
+<tr class="memdesc:ac52d2e3d2e42661df02fb1f613229c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Création d'un <a class="el" href="class_operande.html" title="Opérande d&#39;une opération. ">Operande</a>, <a class="el" href="class_constante.html" title="Valeur définie d&#39;une expression. ">Constante</a> ou <a class="el" href="class_variable.html" title="Valeur inconnue d&#39;une expression La valeur assigné est défini à NULL par défaut. ">Variable</a> suivant si c'est un nombre ou pas.  <a href="#ac52d2e3d2e42661df02fb1f613229c5e">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ac52d2e3d2e42661df02fb1f613229c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aa438208a3387e006cfa9803c293d8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_operateur.html">Operateur</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expression.html#a7aa438208a3387e006cfa9803c293d8d">newOperateur</a> (char *exp, <a class="el" href="class_operande.html">Operande</a> *A, <a class="el" href="class_operande.html">Operande</a> *B)</td></tr>
+<tr class="memdesc:a7aa438208a3387e006cfa9803c293d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Création d'un <a class="el" href="class_operateur.html" title="Opérateur d&#39;une opération. ">Operateur</a>, suivant le caractère de l'opération à réaliser.  <a href="#a7aa438208a3387e006cfa9803c293d8d">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a7aa438208a3387e006cfa9803c293d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -160,11 +163,11 @@ Attributs privés</h2></td></tr>
 <tr class="separator:a94d361a17c03ee985606e9b726706b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p>Fonction de création d'une expression à partir d'une chaine de caractére. </p>
+<div class="textblock"><p>Fonction de création d'une expression à partir d'une chaine de caractére Cette classe fait office d'interface pour l'utilisation des expressions. </p>
 <dl class="section author"><dt>Auteur</dt><dd>Charles Bong. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>5 Avril 2015 </dd></dl>
 
-<p>Définition à la ligne <a class="el" href="_expression_8h_source.html#l00027">27</a> du fichier <a class="el" href="_expression_8h_source.html">Expression.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="_expression_8h_source.html#l00028">28</a> du fichier <a class="el" href="_expression_8h_source.html">Expression.h</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="afb1f7c267861a3a006ff1854c9ffd702"></a>
 <div class="memitem">
@@ -180,10 +183,10 @@ Attributs privés</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Création de la classe <a class="el" href="class_expression.html" title="Fonction de création d&#39;une expression à partir d&#39;une chaine de caractére. ">Expression</a> Permet d'analyser une expression sous forme d'une chaine de caractère et d'en construire l'opérande associée. </p>
+<p>Création de la classe <a class="el" href="class_expression.html" title="Fonction de création d&#39;une expression à partir d&#39;une chaine de caractére Cette classe fait office d&#39;i...">Expression</a> Permet d'analyser une expression sous forme d'une chaine de caractère et d'en construire l'opérande associée. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">exp</td><td>string : <a class="el" href="class_expression.html" title="Fonction de création d&#39;une expression à partir d&#39;une chaine de caractére. ">Expression</a> sous forme d'une chaine de caractère</td></tr>
+    <tr><td class="paramname">exp</td><td>string : <a class="el" href="class_expression.html" title="Fonction de création d&#39;une expression à partir d&#39;une chaine de caractére Cette classe fait office d&#39;i...">Expression</a> sous forme d'une chaine de caractère</td></tr>
   </table>
   </dd>
 </dl>
@@ -196,7 +199,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="class_expression_afb1f7c267861a3a006ff1854c9ffd702_cgraph.png" border="0" usemap="#class_expression_afb1f7c267861a3a006ff1854c9ffd702_cgraph" alt=""/></div>
 <map name="class_expression_afb1f7c267861a3a006ff1854c9ffd702_cgraph" id="class_expression_afb1f7c267861a3a006ff1854c9ffd702_cgraph">
-<area shape="rect" id="node2" href="class_singleton.html#ad6f103597095efda360db4a230308666" title="Singleton::getInstance" alt="" coords="239,5,390,32"/><area shape="rect" id="node3" href="class_expression.html#ac52d2e3d2e42661df02fb1f613229c5e" title="Expression::newOpaDigOrChar" alt="" coords="213,56,416,83"/><area shape="rect" id="node5" href="class_expression.html#a7aa438208a3387e006cfa9803c293d8d" title="Expression::newOperateur" alt="" coords="227,107,402,133"/><area shape="rect" id="node4" href="class_table___variable.html#af873a01972eea7f9782f535477b2b314" title="Obtetion d&#39;une variable Test l&#39;existance d&#39;une variable, la crée dans le cas contraire Et la retourne..." alt="" coords="464,56,644,83"/></map>
+<area shape="rect" id="node2" href="class_singleton.html#ad6f103597095efda360db4a230308666" title="Singleton::getInstance" alt="" coords="239,5,390,32"/><area shape="rect" id="node3" href="class_expression.html#ac52d2e3d2e42661df02fb1f613229c5e" title="Création d&#39;un Operande, Constante ou Variable suivant si c&#39;est un nombre ou pas. " alt="" coords="213,56,416,83"/><area shape="rect" id="node5" href="class_expression.html#a7aa438208a3387e006cfa9803c293d8d" title="Création d&#39;un Operateur, suivant le caractère de l&#39;opération à réaliser. " alt="" coords="227,107,402,133"/><area shape="rect" id="node4" href="class_table___variable.html#af873a01972eea7f9782f535477b2b314" title="Obtetion d&#39;une variable Test l&#39;existance d&#39;une variable, la crée dans le cas contraire Et la retourne..." alt="" coords="464,56,644,83"/></map>
 </div>
 </p>
 
@@ -215,7 +218,7 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00060">60</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00059">59</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
 
 </div>
 </div>
@@ -233,7 +236,7 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00096">96</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00103">103</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -268,7 +271,7 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00092">92</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00099">99</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -303,7 +306,7 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00104">104</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00111">111</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -338,7 +341,7 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00100">100</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00107">107</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -373,7 +376,7 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00108">108</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00115">115</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -408,7 +411,15 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00065">65</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
+<p>Création d'un <a class="el" href="class_operande.html" title="Opérande d&#39;une opération. ">Operande</a>, <a class="el" href="class_constante.html" title="Valeur définie d&#39;une expression. ">Constante</a> ou <a class="el" href="class_variable.html" title="Valeur inconnue d&#39;une expression La valeur assigné est défini à NULL par défaut. ">Variable</a> suivant si c'est un nombre ou pas. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exp</td><td>char* : Caractère à analyser </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00067">67</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -468,7 +479,17 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00073">73</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
+<p>Création d'un <a class="el" href="class_operateur.html" title="Opérateur d&#39;une opération. ">Operateur</a>, suivant le caractère de l'opération à réaliser. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exp</td><td>char* : Caractère à analyser </td></tr>
+    <tr><td class="paramname">A</td><td>Operande* : Opérande gauche de l'opération </td></tr>
+    <tr><td class="paramname">B</td><td>Operande* : Opérande droit de l'opération </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="_expression_8cpp_source.html#l00080">80</a> du fichier <a class="el" href="_expression_8cpp_source.html">Expression.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -500,7 +521,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_expression_8h_source.html#l00040">40</a> du fichier <a class="el" href="_expression_8h_source.html">Expression.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="_expression_8h_source.html#l00041">41</a> du fichier <a class="el" href="_expression_8h_source.html">Expression.h</a>.</p>
 
 </div>
 </div>
@@ -522,7 +543,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_expression_8h_source.html#l00041">41</a> du fichier <a class="el" href="_expression_8h_source.html">Expression.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="_expression_8h_source.html#l00042">42</a> du fichier <a class="el" href="_expression_8h_source.html">Expression.h</a>.</p>
 
 </div>
 </div>
@@ -536,7 +557,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_expression.html">Expression</a></li>
-    <li class="footer">Généré le Lundi 11 Mai 2015 11:57:29 pour Projet-Expression par
+    <li class="footer">Généré le Mardi 12 Mai 2015 16:50:05 pour Projet-Expression par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

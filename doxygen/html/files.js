@@ -13,6 +13,7 @@ var files =
       [ "Division", "class_division.html", "class_division" ]
     ] ],
     [ "Doxy_Main_Page.h", "_doxy___main___page_8h.html", null ],
+    [ "Doxy_Second_Page.h", "_doxy___second___page_8h.html", null ],
     [ "Expression.cpp", "_expression_8cpp.html", null ],
     [ "Expression.h", "_expression_8h.html", [
       [ "Expression", "class_expression.html", "class_expression" ]

@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -116,7 +117,7 @@ $(document).ready(function(){initNavTree('class_table___variable.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Tableau des variables, association entre une lettre et une valeur.  
+<p>Tableau des variables, association entre une lettre et une variable La gestion des variables se fait à l'aide d'une map qui associe une lettre avec un pointeur vers une variable.  
  <a href="class_table___variable.html#details">Plus de détails...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_table___variable_8h_source.html">Table_Variable.h</a>&gt;</code></p>
@@ -138,7 +139,7 @@ Graphe de collaboration de Table_Variable:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:ad972672fd10f8edc5f79e23ddab793c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table___variable.html#ad972672fd10f8edc5f79e23ddab793c0">setVariable</a> (std::string name, float value)</td></tr>
-<tr class="memdesc:ad972672fd10f8edc5f79e23ddab793c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignation d'une valeur à une variable.  <a href="#ad972672fd10f8edc5f79e23ddab793c0">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:ad972672fd10f8edc5f79e23ddab793c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignation d'une valeur à une variable Recherche dans les variables enregistrées (_listof) celle ayant comme nom 'name'. Assignation d'une valeur pour cette variable s'il elle existe, création de la variable dans le cas contraire.  <a href="#ad972672fd10f8edc5f79e23ddab793c0">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ad972672fd10f8edc5f79e23ddab793c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af873a01972eea7f9782f535477b2b314"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_variable.html">Variable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table___variable.html#af873a01972eea7f9782f535477b2b314">getVariable</a> (std::string name)</td></tr>
 <tr class="memdesc:af873a01972eea7f9782f535477b2b314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtetion d'une variable Test l'existance d'une variable, la crée dans le cas contraire Et la retourne.  <a href="#af873a01972eea7f9782f535477b2b314">Plus de détails...</a><br /></td></tr>
@@ -147,6 +148,7 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memdesc:ad122dd4097c3c76f2460bb5d23837142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruction d'une variable.  <a href="#ad122dd4097c3c76f2460bb5d23837142">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ad122dd4097c3c76f2460bb5d23837142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a810f62521d068e167a9152bc30bfbf42"><td class="memItemLeft" align="right" valign="top">std::stack&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table___variable.html#a810f62521d068e167a9152bc30bfbf42">getListVariableNonDef</a> ()</td></tr>
+<tr class="memdesc:a810f62521d068e167a9152bc30bfbf42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter d'un la liste des variables n'ayant pas de valeur assigniée Création d'un stack pour le retour (list). Parcours des variables enregistrées (_listof). Ajout dans le stack des variables n'ayant pas de valeur assigniée (item.second-&gt;calculer() == NULL).  <a href="#a810f62521d068e167a9152bc30bfbf42">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a810f62521d068e167a9152bc30bfbf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -180,11 +182,11 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="separator:ac6e7af82cba33f561bd64e5e0243e7f8 inherit pro_methods_class_singleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p>Tableau des variables, association entre une lettre et une valeur. </p>
+<div class="textblock"><p>Tableau des variables, association entre une lettre et une variable La gestion des variables se fait à l'aide d'une map qui associe une lettre avec un pointeur vers une variable. </p>
 <dl class="section author"><dt>Auteur</dt><dd>Charles Bong. </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>5 Avril 2015 </dd></dl>
 
-<p>Définition à la ligne <a class="el" href="_table___variable_8h_source.html#l00020">20</a> du fichier <a class="el" href="_table___variable_8h_source.html">Table_Variable.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="_table___variable_8h_source.html#l00021">21</a> du fichier <a class="el" href="_table___variable_8h_source.html">Table_Variable.h</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="ad47121e9c3c501540869241688eb97dd"></a>
 <div class="memitem">
@@ -254,12 +256,12 @@ Membres hérités additionnels</h2></td></tr>
 <p>Destruction d'une variable. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>string : Nom de la variable à obtenir </td></tr>
+    <tr><td class="paramname">name</td><td>string : Nom de la variable à supprimer </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Définition à la ligne <a class="el" href="_table___variable_8cpp_source.html#l00052">52</a> du fichier <a class="el" href="_table___variable_8cpp_source.html">Table_Variable.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="_table___variable_8cpp_source.html#l00054">54</a> du fichier <a class="el" href="_table___variable_8cpp_source.html">Table_Variable.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -285,7 +287,9 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_table___variable_8cpp_source.html#l00057">57</a> du fichier <a class="el" href="_table___variable_8cpp_source.html">Table_Variable.cpp</a>.</p>
+<p>Getter d'un la liste des variables n'ayant pas de valeur assigniée Création d'un stack pour le retour (list). Parcours des variables enregistrées (_listof). Ajout dans le stack des variables n'ayant pas de valeur assigniée (item.second-&gt;calculer() == NULL). </p>
+
+<p>Définition à la ligne <a class="el" href="_table___variable_8cpp_source.html#l00064">64</a> du fichier <a class="el" href="_table___variable_8cpp_source.html">Table_Variable.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -327,7 +331,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="class_table___variable_af873a01972eea7f9782f535477b2b314_icgraph.png" border="0" usemap="#class_table___variable_af873a01972eea7f9782f535477b2b314_icgraph" alt=""/></div>
 <map name="class_table___variable_af873a01972eea7f9782f535477b2b314_icgraph" id="class_table___variable_af873a01972eea7f9782f535477b2b314_icgraph">
-<area shape="rect" id="node2" href="class_expression.html#ac52d2e3d2e42661df02fb1f613229c5e" title="Expression::newOpaDigOrChar" alt="" coords="233,5,436,32"/><area shape="rect" id="node3" href="class_expression.html#afb1f7c267861a3a006ff1854c9ffd702" title="Création de la classe Expression Permet d&#39;analyser une expression sous forme d&#39;une chaine de caractèr..." alt="" coords="484,5,644,32"/></map>
+<area shape="rect" id="node2" href="class_expression.html#ac52d2e3d2e42661df02fb1f613229c5e" title="Création d&#39;un Operande, Constante ou Variable suivant si c&#39;est un nombre ou pas. " alt="" coords="233,5,436,32"/><area shape="rect" id="node3" href="class_expression.html#afb1f7c267861a3a006ff1854c9ffd702" title="Création de la classe Expression Permet d&#39;analyser une expression sous forme d&#39;une chaine de caractèr..." alt="" coords="484,5,644,32"/></map>
 </div>
 </p>
 
@@ -357,7 +361,7 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>Assignation d'une valeur à une variable. </p>
+<p>Assignation d'une valeur à une variable Recherche dans les variables enregistrées (_listof) celle ayant comme nom 'name'. Assignation d'une valeur pour cette variable s'il elle existe, création de la variable dans le cas contraire. </p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>string : Nom de la variable à obtenir </td></tr>
@@ -366,7 +370,7 @@ Voici le graphe des appelants de cette fonction :</div>
   </dd>
 </dl>
 
-<p>Définition à la ligne <a class="el" href="_table___variable_8cpp_source.html#l00038">38</a> du fichier <a class="el" href="_table___variable_8cpp_source.html">Table_Variable.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="_table___variable_8cpp_source.html#l00040">40</a> du fichier <a class="el" href="_table___variable_8cpp_source.html">Table_Variable.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -398,7 +402,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_table___variable_8h_source.html#l00022">22</a> du fichier <a class="el" href="_table___variable_8h_source.html">Table_Variable.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="_table___variable_8h_source.html#l00023">23</a> du fichier <a class="el" href="_table___variable_8h_source.html">Table_Variable.h</a>.</p>
 
 </div>
 </div>
@@ -421,7 +425,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="_table___variable_8h_source.html#l00037">37</a> du fichier <a class="el" href="_table___variable_8h_source.html">Table_Variable.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="_table___variable_8h_source.html#l00038">38</a> du fichier <a class="el" href="_table___variable_8h_source.html">Table_Variable.h</a>.</p>
 
 </div>
 </div>
@@ -435,7 +439,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_table___variable.html">Table_Variable</a></li>
-    <li class="footer">Généré le Lundi 11 Mai 2015 11:57:29 pour Projet-Expression par
+    <li class="footer">Généré le Mardi 12 Mai 2015 16:50:05 pour Projet-Expression par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

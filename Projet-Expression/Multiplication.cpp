@@ -23,7 +23,7 @@ Multiplication::~Multiplication()
 	_op_droit = NULL;
 }
 
-void Multiplication::afficher() // TODO : cas a variable -> 4 * x => 4x
+void Multiplication::afficher()
 {
 	std::cout << "(";
 	_op_gauche->afficher();

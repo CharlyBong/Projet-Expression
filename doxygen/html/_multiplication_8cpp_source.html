@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -126,7 +127,7 @@ $(document).ready(function(){initNavTree('_multiplication_8cpp_source.html','');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_operateur.html#a37a67162f5bd7e5a70fcad4066012a3d">_op_droit</a> = NULL;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_multiplication.html#aaed08dbf22f5d3c8f1363924c809bde6">   26</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_multiplication.html#aaed08dbf22f5d3c8f1363924c809bde6">Multiplication::afficher</a>() <span class="comment">// TODO : cas a variable -&gt; 4 * x =&gt; 4x</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_multiplication.html#aaed08dbf22f5d3c8f1363924c809bde6">   26</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_multiplication.html#aaed08dbf22f5d3c8f1363924c809bde6">Multiplication::afficher</a>()</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;(&quot;</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_operateur.html#a7f2326f9f7e07fe9b4be46ed1fc2f20a">_op_gauche</a>-&gt;<a class="code" href="class_operande.html#aed9bc9bd919a79eda9ac251b5be39b74">afficher</a>();</div>
@@ -175,7 +176,7 @@ $(document).ready(function(){initNavTree('_multiplication_8cpp_source.html','');
 <div class="ttc" id="class_operande_html_a8c6684399afe0580a0ef8dfd5fae9155"><div class="ttname"><a href="class_operande.html#a8c6684399afe0580a0ef8dfd5fae9155">Operande::calculer</a></div><div class="ttdeci">virtual float calculer()=0</div><div class="ttdoc">Permet d&#39;éffectuer l&#39;opération contenu. </div></div>
 <div class="ttc" id="class_multiplication_html_a2e499ec2d7d1751bb1e5795c6beefb4f"><div class="ttname"><a href="class_multiplication.html#a2e499ec2d7d1751bb1e5795c6beefb4f">Multiplication::afficherPolonaise</a></div><div class="ttdeci">void afficherPolonaise()</div><div class="ttdoc">Afficheur de l&#39;opérande en version polonaise. </div><div class="ttdef"><b>Definition:</b> <a href="_multiplication_8cpp_source.html#l00035">Multiplication.cpp:35</a></div></div>
 <div class="ttc" id="class_multiplication_html_ae81a978764f3a1578d1e659a1bbf6485"><div class="ttname"><a href="class_multiplication.html#ae81a978764f3a1578d1e659a1bbf6485">Multiplication::~Multiplication</a></div><div class="ttdeci">~Multiplication()</div><div class="ttdef"><b>Definition:</b> <a href="_multiplication_8cpp_source.html#l00018">Multiplication.cpp:18</a></div></div>
-<div class="ttc" id="class_operateur_html_a37a67162f5bd7e5a70fcad4066012a3d"><div class="ttname"><a href="class_operateur.html#a37a67162f5bd7e5a70fcad4066012a3d">Operateur::_op_droit</a></div><div class="ttdeci">Operande * _op_droit</div><div class="ttdef"><b>Definition:</b> <a href="_operateur_8h_source.html#l00048">Operateur.h:48</a></div></div>
+<div class="ttc" id="class_operateur_html_a37a67162f5bd7e5a70fcad4066012a3d"><div class="ttname"><a href="class_operateur.html#a37a67162f5bd7e5a70fcad4066012a3d">Operateur::_op_droit</a></div><div class="ttdeci">Operande * _op_droit</div><div class="ttdef"><b>Definition:</b> <a href="_operateur_8h_source.html#l00049">Operateur.h:49</a></div></div>
 <div class="ttc" id="class_operande_html_aed9bc9bd919a79eda9ac251b5be39b74"><div class="ttname"><a href="class_operande.html#aed9bc9bd919a79eda9ac251b5be39b74">Operande::afficher</a></div><div class="ttdeci">virtual void afficher()=0</div><div class="ttdoc">Afficheur par défaut de l&#39;opérande. </div></div>
 <div class="ttc" id="class_operande_html_afb71ca79bf7ed9342304465b96b6dded"><div class="ttname"><a href="class_operande.html#afb71ca79bf7ed9342304465b96b6dded">Operande::afficherPolonaise</a></div><div class="ttdeci">virtual void afficherPolonaise()=0</div><div class="ttdoc">Afficheur de l&#39;opérande en version polonaise. </div></div>
 <div class="ttc" id="class_operateur_html_a7f2326f9f7e07fe9b4be46ed1fc2f20a"><div class="ttname"><a href="class_operateur.html#a7f2326f9f7e07fe9b4be46ed1fc2f20a">Operateur::_op_gauche</a></div><div class="ttdeci">Operande * _op_gauche</div><div class="ttdef"><b>Definition:</b> <a href="_operateur_8h_source.html#l00045">Operateur.h:45</a></div></div>
@@ -185,7 +186,7 @@ $(document).ready(function(){initNavTree('_multiplication_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2d2e7548e67c9210f9f99c7e20f1c2d1.html">Projet-Expression</a></li><li class="navelem"><a class="el" href="_multiplication_8cpp.html">Multiplication.cpp</a></li>
-    <li class="footer">Généré le Lundi 11 Mai 2015 11:57:29 pour Projet-Expression par
+    <li class="footer">Généré le Mardi 12 Mai 2015 16:50:05 pour Projet-Expression par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

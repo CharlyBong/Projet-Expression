@@ -44,6 +44,7 @@ public:
 			std::cout << "   -inconnu- " << std::endl;
 	};
 
+protected:
 	Operande* _op_gauche;
 	Operande* _op_droit;
 };

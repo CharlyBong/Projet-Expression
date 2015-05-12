@@ -21,6 +21,7 @@
 
 /** \class Expression
 * \brief Fonction de création d'une expression à partir d'une chaine de caractére
+*	Cette classe fait office d'interface pour l'utilisation des expressions
 * \author Charles Bong.
 * \date 5 Avril 2015
 */

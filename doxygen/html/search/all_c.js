@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['variable',['Variable',['../class_variable.html',1,'Variable'],['../class_variable.html#aa577850f5c43638f1042bb4fc1356c25',1,'Variable::Variable(std::string name)'],['../class_variable.html#a4ef20fc600585c448809ac9de4d6e432',1,'Variable::Variable(std::string name, float value)']]],
-  ['variable_2ecpp',['Variable.cpp',['../_variable_8cpp.html',1,'']]],
-  ['variable_2eh',['Variable.h',['../_variable_8h.html',1,'']]]
+  ['setvariable',['setVariable',['../class_table___variable.html#ad972672fd10f8edc5f79e23ddab793c0',1,'Table_Variable']]],
+  ['singleton',['Singleton',['../class_singleton.html',1,'Singleton&lt; T &gt;'],['../class_singleton.html#a923b995920da9c06590adb170ab2f890',1,'Singleton::Singleton()']]],
+  ['singleton_2eh',['Singleton.h',['../_singleton_8h.html',1,'']]],
+  ['singleton_3c_20table_5fvariable_20_3e',['Singleton&lt; Table_Variable &gt;',['../class_singleton.html',1,'Singleton&lt; Table_Variable &gt;'],['../class_table___variable.html#a74743125ea16e032105648fb38664c4e',1,'Table_Variable::Singleton&lt; Table_Variable &gt;()']]],
+  ['soustraction',['Soustraction',['../class_soustraction.html',1,'Soustraction'],['../class_soustraction.html#aeffaf4ebfa43df2ceb2da80bc42bcebe',1,'Soustraction::Soustraction()']]],
+  ['soustraction_2ecpp',['Soustraction.cpp',['../_soustraction_8cpp.html',1,'']]],
+  ['soustraction_2eh',['Soustraction.h',['../_soustraction_8h.html',1,'']]]
 ];

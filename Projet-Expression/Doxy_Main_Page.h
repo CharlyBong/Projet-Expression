@@ -10,7 +10,7 @@
 */
 
 
-/*! \mainpage Compte-Rendu du projet
+/*! \mainpage Présentation du projet
 * \section intro_sec Introduction
 *	Ce projet s'inscrit dans le cadre du module d'ouverture de C++.<br/>
 *	Notre objectif principal était de traiter des expressions mathématiques simple.<br/>

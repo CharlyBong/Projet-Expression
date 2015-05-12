@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -142,11 +143,12 @@ $(document).ready(function(){initNavTree('_operateur_8h_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;   -inconnu- &quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_operateur.html#a7f2326f9f7e07fe9b4be46ed1fc2f20a">   45</a></span>&#160;    };</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_operande.html">Operande</a>* <a class="code" href="class_operateur.html#a7f2326f9f7e07fe9b4be46ed1fc2f20a">_op_gauche</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_operateur.html#a37a67162f5bd7e5a70fcad4066012a3d">   48</a></span>&#160;    <a class="code" href="class_operande.html">Operande</a>* <a class="code" href="class_operateur.html#a37a67162f5bd7e5a70fcad4066012a3d">_op_droit</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_operande.html">Operande</a>* <a class="code" href="class_operateur.html#a7f2326f9f7e07fe9b4be46ed1fc2f20a">_op_gauche</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_operateur.html#a37a67162f5bd7e5a70fcad4066012a3d">   49</a></span>&#160;    <a class="code" href="class_operande.html">Operande</a>* <a class="code" href="class_operateur.html#a37a67162f5bd7e5a70fcad4066012a3d">_op_droit</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_operande_html"><div class="ttname"><a href="class_operande.html">Operande</a></div><div class="ttdoc">Opérande d&#39;une opération. </div><div class="ttdef"><b>Definition:</b> <a href="_operande_8h_source.html#l00017">Operande.h:17</a></div></div>
 <div class="ttc" id="class_operateur_html_a72e134f82311a553fd09730eadf42555"><div class="ttname"><a href="class_operateur.html#a72e134f82311a553fd09730eadf42555">Operateur::Operateur</a></div><div class="ttdeci">Operateur(const Operateur &amp;o)</div><div class="ttdef"><b>Definition:</b> <a href="_operateur_8h_source.html#l00026">Operateur.h:26</a></div></div>
 <div class="ttc" id="_operande_8h_html"><div class="ttname"><a href="_operande_8h.html">Operande.h</a></div><div class="ttdoc">Déclaration de la classe Operande. </div></div>
@@ -156,7 +158,7 @@ $(document).ready(function(){initNavTree('_operateur_8h_source.html','');});
 <div class="ttc" id="class_operateur_html_a091211894e2e0d1fb22e7aeb164de041"><div class="ttname"><a href="class_operateur.html#a091211894e2e0d1fb22e7aeb164de041">Operateur::~Operateur</a></div><div class="ttdeci">virtual ~Operateur()</div><div class="ttdef"><b>Definition:</b> <a href="_operateur_8h_source.html#l00031">Operateur.h:31</a></div></div>
 <div class="ttc" id="class_operateur_html_a47e3d1e6e37383b844e9f54557544dfa"><div class="ttname"><a href="class_operateur.html#a47e3d1e6e37383b844e9f54557544dfa">Operateur::afficher_expression</a></div><div class="ttdeci">void afficher_expression()</div><div class="ttdoc">Affiche l&#39;opération et son résultat. </div><div class="ttdef"><b>Definition:</b> <a href="_operateur_8h_source.html#l00037">Operateur.h:37</a></div></div>
 <div class="ttc" id="class_operande_html_a8c6684399afe0580a0ef8dfd5fae9155"><div class="ttname"><a href="class_operande.html#a8c6684399afe0580a0ef8dfd5fae9155">Operande::calculer</a></div><div class="ttdeci">virtual float calculer()=0</div><div class="ttdoc">Permet d&#39;éffectuer l&#39;opération contenu. </div></div>
-<div class="ttc" id="class_operateur_html_a37a67162f5bd7e5a70fcad4066012a3d"><div class="ttname"><a href="class_operateur.html#a37a67162f5bd7e5a70fcad4066012a3d">Operateur::_op_droit</a></div><div class="ttdeci">Operande * _op_droit</div><div class="ttdef"><b>Definition:</b> <a href="_operateur_8h_source.html#l00048">Operateur.h:48</a></div></div>
+<div class="ttc" id="class_operateur_html_a37a67162f5bd7e5a70fcad4066012a3d"><div class="ttname"><a href="class_operateur.html#a37a67162f5bd7e5a70fcad4066012a3d">Operateur::_op_droit</a></div><div class="ttdeci">Operande * _op_droit</div><div class="ttdef"><b>Definition:</b> <a href="_operateur_8h_source.html#l00049">Operateur.h:49</a></div></div>
 <div class="ttc" id="class_operande_html_aed9bc9bd919a79eda9ac251b5be39b74"><div class="ttname"><a href="class_operande.html#aed9bc9bd919a79eda9ac251b5be39b74">Operande::afficher</a></div><div class="ttdeci">virtual void afficher()=0</div><div class="ttdoc">Afficheur par défaut de l&#39;opérande. </div></div>
 <div class="ttc" id="class_operateur_html_a7f2326f9f7e07fe9b4be46ed1fc2f20a"><div class="ttname"><a href="class_operateur.html#a7f2326f9f7e07fe9b4be46ed1fc2f20a">Operateur::_op_gauche</a></div><div class="ttdeci">Operande * _op_gauche</div><div class="ttdef"><b>Definition:</b> <a href="_operateur_8h_source.html#l00045">Operateur.h:45</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -165,7 +167,7 @@ $(document).ready(function(){initNavTree('_operateur_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2d2e7548e67c9210f9f99c7e20f1c2d1.html">Projet-Expression</a></li><li class="navelem"><a class="el" href="_operateur_8h.html">Operateur.h</a></li>
-    <li class="footer">Généré le Lundi 11 Mai 2015 11:57:29 pour Projet-Expression par
+    <li class="footer">Généré le Mardi 12 Mai 2015 16:50:05 pour Projet-Expression par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

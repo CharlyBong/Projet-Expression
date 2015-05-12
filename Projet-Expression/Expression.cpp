@@ -25,7 +25,6 @@ Expression::Expression(std::string exp)
 	char *next_token1;
 	pch = strtok_s(expc, separators, &next_token1);
 
-	//pch = strtok_s(expc, " " ;
 	Operande* opa = newOpaDigOrChar(pch);
 	pch = strtok_s(NULL, separators, &next_token1);
 	Operande* opb = newOpaDigOrChar(pch);
@@ -62,6 +61,9 @@ Expression::~Expression()
 	delete _expression;
 }
 
+/** \brief Création d'un Operande, Constante ou Variable suivant si c'est un nombre ou pas
+* \param exp char* : Caractère à analyser
+*/
 Operande* Expression::newOpaDigOrChar(char* exp)
 {
 	if (isdigit(exp[0]))
@@ -70,6 +72,11 @@ Operande* Expression::newOpaDigOrChar(char* exp)
 		return _tableV->getVariable(exp);
 }
 
+/** \brief Création d'un Operateur, suivant le caractère de l'opération à réaliser.
+* \param exp char* : Caractère à analyser
+* \param A Operande* : Opérande gauche de l'opération
+* \param B Operande* : Opérande droit de l'opération
+*/
 Operateur* Expression::newOperateur(char* exp, Operande* A, Operande* B)
 {
 	switch (exp[0])
