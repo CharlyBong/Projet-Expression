@@ -206,3 +206,4 @@ FakesAssemblies/
 !Release/Projet-Expression.exe
 Projet-Expression/Release/
 Rendu/
+*Doxyfile
